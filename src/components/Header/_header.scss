@@ -36,4 +36,13 @@
             color: $color-primary;
         }
     }
+
+    .menuToggle {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: $font-size-medium;
+        color: $color-primary;
+        transition: color 0.3s ease-in-out;
+    }
 }
