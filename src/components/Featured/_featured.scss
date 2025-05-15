@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+
+.featured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    .featuredTitle {
+        font-size: $font-size-large;
+        font-weight: inherit;
+        color: $color-primary;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        @media (max-width: 768px) {
+            font-size: $font-size-large;
+        }
+    }
+
+    .featuredCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

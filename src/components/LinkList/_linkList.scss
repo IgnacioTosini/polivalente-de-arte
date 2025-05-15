@@ -1,0 +1,21 @@
+@use '../../styles/variables' as *;
+
+.linkList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+        text-decoration: none;
+        color: $color-text-primary;
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-normal;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

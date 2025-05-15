@@ -1,0 +1,121 @@
+@use '../../styles/variables' as *;
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1.5rem;
+    background-color: $color-primary;
+    color: $color-white;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .footerContent {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 2rem;
+            }
+
+            .footerContact {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: fit-content;
+            }
+
+            .footerFastlinks {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: fit-content;
+
+                .linkList {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                    gap: .5rem;
+
+                    a {
+                        color: $color-white;
+
+                        &:hover {
+                            color: $color-emphasis;
+                        }
+                    }
+                }
+            }
+
+            .footerSocials {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 1rem;
+                width: fit-content;
+
+                a {
+                    color: $color-white;
+                    font-size: $font-size-medium;
+
+                    &:hover {
+                        color: $color-emphasis;
+                    }
+                }
+            }
+
+            .footerFastlinks {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+
+                h4 {
+                    font-size: $font-size-small;
+                }
+
+                a {
+                    color: $color-white;
+                    font-size: $font-size-base;
+
+                    &:hover {
+                        color: $color-emphasis;
+                    }
+                }
+            }
+        }
+
+        .footerBottom {
+            padding-top: 1rem;
+            margin: 1rem;
+            text-align: center;
+            opacity: .8;
+            border-top: 1px solid #fff3;
+            font-size: $font-size-xs;
+        }
+    }
+
+    h2,
+    h4 {
+        font-weight: inherit;
+    }
+
+    h4 {
+        font-size: $font-size-small;
+        line-height: $line-height-normal;
+        font-weight: $font-weight-normal;
+    }
+
+    h2 {
+        font-size: $font-size-medium;
+        line-height: $line-height-medium;
+        font-weight: $font-weight-normal;
+    }
+}

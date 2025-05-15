@@ -1,0 +1,47 @@
+// ─── MODO CLARO ──────────────────────────────────────────────────
+// Paleta principal
+$color-primary: #6A1B9A; // Púrpura Profundo :contentReference[oaicite:0]{index=0}
+$color-secondary: #F06292; // Rosa Vibrante :contentReference[oaicite:1]{index=1}
+$color-white: #FFFFFF; // Blanco :contentReference[oaicite:1]{index=1}
+
+// Fondos y textos
+$color-background: #F3E5F5; // Lavanda Suave :contentReference[oaicite:2]{index=2}
+$color-text-primary: #212121; // Gris Oscuro :contentReference[oaicite:3]{index=3}
+$color-text-secondary: #757575; // Gris Medio :contentReference[oaicite:4]{index=4}
+
+// Énfasis
+$color-emphasis: #FFEB3B; // Amarillo Brillante :contentReference[oaicite:5]{index=5}
+
+
+// ─── MODO OSCURO ─────────────────────────────────────────────────
+// Reutilizamos las mismas tonalidades para mantener identidad,
+// pero adaptamos fondo/texto para contraste en oscuro.
+$color-primary-dark: $color-primary; // #6A1B9A
+$color-secondary-dark: $color-secondary; // #F06292
+
+$color-background-dark: $color-text-primary; // #212121
+$color-text-primary-dark: $color-background; // #F3E5F5
+$color-text-secondary-dark: lighten($color-text-secondary, 40%); // #BDBDBD aprox.
+
+$color-emphasis-dark: $color-emphasis; // #FFEB3B
+
+// ─── ESTILOS GENERALES ────────────────────────────────────────────
+// Variables de tipografía
+$font-family: 'Inter', sans-serif;
+
+$font-size-xs: 14px;
+$font-size-base: 16px;
+$font-size-small: 18px;
+$font-size-medium: 24px;
+$font-size-large: 32px;
+$font-size-xlarge: 48px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-normal: 27px;
+$line-height-medium: 36px;
+$line-height-large: 48px;
+$line-height-xlarge: 72px;

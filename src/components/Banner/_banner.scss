@@ -1,0 +1,34 @@
+@use '../../styles/variables' as *;
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .bannerTitle {
+        font-size: $font-size-xlarge;
+        font-weight: $font-weight-normal;
+        line-height: $line-height-xlarge;
+        color: $color-text-primary;
+    }
+
+    .bannerSubtitle {
+        font-size: $font-size-medium;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-medium;
+        color: $color-text-primary;
+    }
+
+    .bannerDescription {
+        font-size: $font-size-base;
+        font-weight: $font-weight-medium;
+        line-height: $line-height-normal;
+        color: $color-text-secondary;
+        max-width: 800px;
+    }
+}
