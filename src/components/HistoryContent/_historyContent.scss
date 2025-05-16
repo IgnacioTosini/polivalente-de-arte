@@ -19,6 +19,7 @@
         width: 100%;
         max-width: 800px;
         margin: 0 auto;
+        margin-bottom: 2rem;
 
         img {
             width: 100%;
@@ -30,6 +31,7 @@
 
     .historyMissionVision {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
 
         .historyMission, .historyVision {
@@ -37,6 +39,7 @@
             flex-direction: column;
             align-items: flex-start;
             width: 100%;
+            max-width: 500px;
             padding: 1rem;
 
             h2 {

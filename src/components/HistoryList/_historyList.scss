@@ -1,49 +1,54 @@
 @use '../../styles/variables' as *;
 
 .historyContentTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 1rem;
+
+    article {
         display: flex;
-        flex-direction: column;
         align-items: flex-start;
-        width: 100%;
-        padding: 1rem;
+        gap: 2rem;
+        margin-bottom: 1rem;
 
-        article {
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 0rem;
+        }
+
+        .historyYear {
+            font-size: $font-size-small;
+            color: $color-primary;
+            line-height: $line-height-normal;
+            font-weight: $font-weight-bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .historyContentText {
             display: flex;
+            flex-direction: column;
             align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 2rem;
-            margin-bottom: 1rem;
+            justify-content: center;
+            margin: 0 auto;
 
-            .historyYear {
-                font-size: $font-size-small;
+            .historyTitle {
+                font-size: $font-size-medium;
                 color: $color-primary;
                 line-height: $line-height-normal;
-                font-weight: $font-weight-bold;
+                font-weight: inherit;
                 margin-bottom: 0.5rem;
             }
 
-            .historyContentText {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                margin: 0 auto;
-
-                .historyTitle {
-                    font-size: $font-size-medium;
-                    color: $color-primary;
-                    line-height: $line-height-normal;
-                    font-weight: inherit;
-                    margin-bottom: 0.5rem;
-                }
-
-                .historyDescription {
-                    font-size: $font-size-base;
-                    color: $color-text-primary;
-                    line-height: $line-height-normal;
-                    font-weight: inherit;
-                    margin-bottom: 1rem;
-                }
+            .historyDescription {
+                font-size: $font-size-base;
+                color: $color-text-primary;
+                line-height: $line-height-normal;
+                font-weight: inherit;
+                margin-bottom: 1rem;
             }
         }
     }
+}
