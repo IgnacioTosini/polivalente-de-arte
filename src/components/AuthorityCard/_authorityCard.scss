@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+
+.authorityCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+
+    .authorityCardImage {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .authorityCardName {
+        font-size: $font-size-small;
+        color: $color-primary;
+        font-weight: inherit;
+    }
+
+    .authorityCardRole {
+        font-size: $font-size-base;
+        color: $color-secondary;
+        font-weight: inherit;
+    }
+
+    .authorityCardDescription {
+        font-size: $font-size-base;
+        color: $color-text-primary;
+        font-weight: inherit;
+        text-align: center;
+    }
+}

@@ -1,0 +1,10 @@
+.institutionalPageAuthorities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    .authorityCard {
+        margin: 1rem;
+    }
+}

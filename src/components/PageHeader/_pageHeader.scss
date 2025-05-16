@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+
+.pageHeader {
+    padding: 2rem;
+    background-color: $color-primary;
+    color: $color-text-primary;
+
+    h1, h2 {
+        color: $color-white;
+        font-weight: inherit;
+    }
+
+    h1 {
+        font-size: $font-size-large;
+        margin-bottom: .5rem;
+    }
+
+    h2 {
+        font-size: $font-size-small;
+        margin-left: 0.5rem;
+    }
+}
