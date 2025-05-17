@@ -38,6 +38,12 @@
                 max-width: 100%;
             }
         }
+
+        textarea {
+            min-width: 20rem;
+            min-height: 7rem;
+            max-height: 10rem;
+        }
     }
 
     button {

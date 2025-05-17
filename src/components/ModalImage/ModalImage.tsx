@@ -19,8 +19,9 @@ export const ModalImage = ({ src, alt, onClose }: ModalImageProps) => {
     return (
         <div className="modalImageOverlay" onClick={onClose}>
             <div className="modalImageContent" onClick={e => e.stopPropagation()}>
-                <img src={src} alt={alt || 'Imagen ampliada'} />
+                <img src={src} alt={alt || 'Imagen ampliada'} loading='lazy' />
                 <button className="modalImageClose" onClick={onClose}>&times;</button>
+                <p className="modalDescription">{alt}</p>
             </div>
         </div>
     );

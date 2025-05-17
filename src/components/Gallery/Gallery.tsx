@@ -2,23 +2,24 @@ import { useState } from 'react';
 import { ModalImage } from '../ModalImage/ModalImage';
 import './_gallery.scss';
 
-export const Gallery = () => {
-    const [modalImg, setModalImg] = useState<string|null>(null);
+type GalleryProps = {
+    images: { src: string; alt: string }[];
+}
+
+export const Gallery = ({ images }: GalleryProps) => {
+    const [modalImg, setModalImg] = useState<string | null>(null);
     return (
         <>
             <section className="gallery">
-                <picture className="galleryImage" onClick={() => setModalImg('https://placehold.co/300')}>
-                    <img src="https://placehold.co/300" alt="Imagen 1" />
-                </picture>
-                <picture className="galleryImage" onClick={() => setModalImg('https://placehold.co/300')}>
-                    <img src="https://placehold.co/300" alt="Imagen 2" />
-                </picture>
-                <picture className="galleryImage" onClick={() => setModalImg('https://placehold.co/300')}>
-                    <img src="https://placehold.co/300" alt="Imagen 3" />
-                </picture>
+                {images.map((image, index) => (
+                    <picture key={index} className="galleryImage" onClick={() => setModalImg(image.src)}>
+                        <img src={image.src} alt={image.alt} loading='lazy' />
+                        <span className="galleryImageDesc">{image.alt}</span>
+                    </picture>
+                ))}
             </section>
             {modalImg && (
-                <ModalImage src={modalImg} onClose={() => setModalImg(null)} />
+                <ModalImage src={modalImg} alt={images.find(img => img.src === modalImg)?.alt} onClose={() => setModalImg(null)} />
             )}
         </>
     );

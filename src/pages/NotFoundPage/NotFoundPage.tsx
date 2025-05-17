@@ -8,7 +8,7 @@ export const NotFoundPage = () => {
             <h2 className="notFoundPageSubtitle">Página no encontrada</h2>
             <p className="notFoundPageText">Lo sentimos, la página que estás buscando no existe.</p>
             <Link to="/" className="notFoundPageLink">Volver a la página principal</Link>
-            <img src="/escudoDelLemareFC.png" alt="Escudo del Lemare FC" className="notFoundPageLogo" loading="lazy" />
+            <img src="https://placehold.co/800" alt="Polivalente de Arte" className="notFoundPageLogo" loading="lazy" />
             <p className="notFoundPageText">Desarrollado por Ignacio Tosini</p>
         </div>
     )

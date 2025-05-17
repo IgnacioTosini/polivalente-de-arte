@@ -7,7 +7,7 @@ export const HistoryContent = () => {
             <h1>Nuestra Historia</h1>
             <section className='historyContentContainer'>
                 <picture>
-                    <img src="https://placehold.co/800" alt="Historia de la Institución" />
+                    <img src="https://placehold.co/800" alt="Historia de la Institución" loading='lazy' />
                 </picture>
                 <HistoryList />
                 <section className='historyMissionVision'>
