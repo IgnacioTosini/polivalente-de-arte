@@ -1,0 +1,58 @@
+@use '../../styles/variables' as *;
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .formGroup {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: $font-weight-medium;
+            margin-bottom: 0.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            max-width: clamp(550px, 100%, 300px);
+            min-height: 3.5rem;
+            max-height: 10rem;
+            font-size: $font-size-base;
+            color: $color-text-primary;
+            padding: 0.5rem;
+            border: 1px solid $color-background-light;
+            border-radius: 0.5rem;
+            background: $color-white;
+            transition: border-color 0.2s;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+            &:focus {
+                border-color: $color-primary;
+                outline: none;
+            }
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    button {
+        width: fit-content;
+        font-size: $font-size-base;
+        font-weight: $font-weight-bold;
+        padding: 0.65rem 1.5rem;
+        background: $color-primary;
+        color: $color-white;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+
+        &:hover {
+            background: darken($color-primary, 5%);
+        }
+    }
+}
