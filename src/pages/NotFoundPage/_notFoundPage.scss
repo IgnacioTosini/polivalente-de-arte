@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+@use 'sass:color'; // Importar el módulo de Sass para funciones de color
+
+.notFoundPageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 80vh;
+    background: url('/bannerOlas.png') no-repeat center center/cover;
+    padding: 2rem;
+
+    .notFoundPageTitle {
+        font-size: $font-size-xlarge;
+        color: $color-primary;
+        margin-bottom: 1rem;
+    }
+
+    .notFoundPageSubtitle {
+        font-size: $font-size-xlarge;
+        color: $color-secondary;
+        margin-bottom: 2rem;
+    }
+
+    .notFoundPageText {
+        font-size: $font-size-large;
+        margin-top: 1rem;
+    }
+
+    .notFoundPageLink {
+        font-size: $font-size-large;
+        color: $color-primary;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        text-align: center;
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid $color-secondary;
+        border-radius: 0.5rem;
+
+        &:hover {
+            background-color: color.adjust($color-secondary, $lightness: 10%); // Usar la función adjust del módulo color
+        }
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+}

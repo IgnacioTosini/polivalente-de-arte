@@ -1,0 +1,47 @@
+export const syllabus = [
+    {
+        especiality: 'Artes Visuales',
+        description: 'Formación integral en diversas técnicas y lenguajes visuales, desde los tradicionales hasta los digitales.',
+        coordinator: 'Prof. Juan Pérez',
+        subjects: [
+            'Dibujo y Pintura',
+            'Escultura',
+            'Grabado',
+            'Fotografía',
+            'Diseño Gráfico',
+            'Historia del Arte',
+            'Nuevos Medios Digitales',
+        ],
+        image: 'art',
+    },
+    {
+        especiality: 'Música',
+        description: 'Desarrollo de habilidades técnicas, interpretativas y creativas en el campo musical.',
+        coordinator: 'Prof. Ana Gómez',
+        subjects: [
+            'Instrumento Principal',
+            'Lenguaje Musical',
+            'Armonía',
+            'Conjunto Instrumental',
+            'Historia de la Música',
+            'Tecnología Musical',
+            'Composición',
+        ],
+        image: 'music',
+    },
+    {
+        especiality: 'Danza',
+        description: 'Formación en diferentes estilos de danza con énfasis en la expresión corporal y la creación coreográfica.',
+        coordinator: 'Prof. Laura Martínez',
+        subjects: [
+            'Técnica Clásica',
+            'Danza Contemporánea',
+            'Danzas Folklóricas',
+            'Expresión Corporal',
+            'Composición Coreográfica',
+            'Historia de la Danza',
+            'Anatomía Aplicada',
+        ],
+        image: 'dance',
+    },
+]
