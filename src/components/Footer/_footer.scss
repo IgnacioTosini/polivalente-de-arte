@@ -45,7 +45,9 @@
                     gap: .5rem;
 
                     a {
-                        color: $color-text-secondary;
+                        color: $color-white;
+                        font-weight: $font-weight-medium;
+                        text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 
                         &:hover {
                             color: $color-emphasis;
@@ -65,6 +67,7 @@
                 a {
                     color: $color-white;
                     font-size: $font-size-medium;
+                    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 
                     &:hover {
                         color: $color-emphasis;
@@ -79,11 +82,14 @@
 
                 h4 {
                     font-size: $font-size-small;
+                    font-weight: $font-weight-normal;
                 }
 
                 a {
                     color: $color-white;
                     font-size: $font-size-base;
+                    font-weight: $font-weight-medium;
+                    text-shadow: 0 1px 2px rgba(0,0,0,0.15);
 
                     &:hover {
                         color: $color-emphasis;

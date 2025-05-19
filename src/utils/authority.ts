@@ -1,26 +1,20 @@
 export const authorities = [
     {
         id: 1,
-        name: 'Admin',
-        role: 'Administrator',
-        description: 'Administrator with full access',
+        name: 'Prof. Luis María Reyes',
+        role: 'Director',
+        description: 'Director del Polivalente de Arte ESEA N°1',
     },
     {
         id: 2,
-        name: 'Editor',
-        role: 'Editor',
-        description: 'Editor with limited access',
+        name: 'Prof. Belinda Ríos',
+        role: 'Vicedirectora',
+        description: 'Vicedirectora del Polivalente de Arte ESEA N°1',
     },
     {
         id: 3,
-        name: 'Viewer',
-        role: 'Viewer',
-        description: 'Viewer with read-only access',
-    },
-    {
-        id: 4,
-        name: 'Guest',
-        role: 'Guest',
-        description: 'Guest with minimal access',
+        name: 'Prof. Vanina Bertone',
+        role: 'Vicedirectora',
+        description: 'Vicedirectora con acceso de solo lectura',
     },
 ];

@@ -17,7 +17,7 @@ export const ContactoPage = () => {
                         </picture>
                         <div className='contactoPageInfo'>
                             <h3>Dirección</h3>
-                            <p>Av. Juan Bautista Alberdi 2401</p>
+                            <p>Diagonal Alberdi 2428</p>
                         </div>
                     </div>
                     <div className='infoContainer'>
@@ -47,7 +47,15 @@ export const ContactoPage = () => {
                             <p>Lunes a Viernes 9:00 - 18:00</p>
                         </div>
                     </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.0681345285875!2d-57.5439083!3d-37.998871199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1acdb67b05%3A0xd459d4ed1e645f34!2sPolivalente%20de%20Arte%20LA!5e0!3m2!1ses!2sar!4v1747453907436!5m2!1ses!2sar" width="500" height="350" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.0681345285875!2d-57.5439083!3d-37.998871199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc1acdb67b05%3A0xd459d4ed1e645f34!2sPolivalente%20de%20Arte%20LA!5e0!3m2!1ses!2sar!4v1747453907436!5m2!1ses!2sar"
+                        width="500"
+                        height="350"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Ubicación Polivalente de Arte"
+                    ></iframe>
                 </section>
             </section>
 

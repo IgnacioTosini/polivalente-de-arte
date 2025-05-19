@@ -13,11 +13,11 @@ export const Footer = () => {
                         <p>Phone: +1 (555) 123-4567</p>
                     </div>
                     <div className='footerFastlinks'>
-                        <h4>Enlaces Rápidos</h4>
+                        <h3>Enlaces Rápidos</h3>
                         <LinkList />
                     </div>
                     <div className='footerSocials'>
-                        <h4>Síguenos</h4>
+                        <h3>Síguenos</h3>
                         <SocialLinkList />
                     </div>
                 </section>

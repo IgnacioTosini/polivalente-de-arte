@@ -7,7 +7,7 @@ export const HistoryContent = () => {
             <h1>Nuestra Historia</h1>
             <section className='historyContentContainer'>
                 <picture>
-                    <img src="logoPolivalenteDeArte.webp" alt="Logo Polivalente de Arte" loading='lazy' />
+                    <img src="/logoPolivalenteDeArteSinFondo.webp" alt="Logo Polivalente de Arte" loading='lazy' />
                 </picture>
                 <HistoryList />
                 <section className='historyMissionVision'>

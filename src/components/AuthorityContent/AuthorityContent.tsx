@@ -10,7 +10,6 @@ export const AuthorityContent = () => {
                 {authorities.map((authority) => (
                     <AuthorityCard
                         key={authority.id}
-                        image="https://placehold.co/400"
                         name={authority.name}
                         role={authority.role}
                         description={authority.description}

@@ -26,7 +26,7 @@ export const Header = () => {
         <header className='header'>
             <div className="headerContainerLogo">
                 <picture className="containerLogo">
-                    <img src="/logoPolivalenteDeArte.webp" alt="Logo" loading='lazy' />
+                    <img src="/logoPolivalenteDeArteSinFondo.webp" alt="Logo" loading='lazy' />
                 </picture>
                 <h1 className="headerTitle">Polivalente de Arte</h1>
             </div>
