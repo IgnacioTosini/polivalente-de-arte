@@ -1,14 +1,28 @@
+import { useRef } from 'react';
 import { ContactForm } from '../../components/ContactForm/ContactForm'
 import { IoLocationOutline } from "react-icons/io5";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
+import { useGsapFadeInUp } from '../../hooks/useGsapFadeInUp';
 import './_contactoPage.scss'
 
 export const ContactoPage = () => {
+    const contentRef = useRef<HTMLDivElement>(null);
+    const formRef = useRef<HTMLDivElement>(null);
+    const mapRef = useRef<HTMLIFrameElement>(null);
+    const infoRef = useRef<HTMLDivElement>(null);
+    const contactRef = useRef<HTMLDivElement>(null);
+
+    useGsapFadeInUp(contentRef, 0.5);
+    useGsapFadeInUp(formRef, 0.5);
+    useGsapFadeInUp(mapRef, 0.5);
+    useGsapFadeInUp(infoRef, 0.5);
+    useGsapFadeInUp(contactRef, 0.5);
+
     return (
-        <div className="contactoPage">
-            <section className='contactoPageContainer'>
+        <div className="contactoPage" ref={contentRef}>
+            <section className='contactoPageContainer' ref={infoRef}>
                 <section>
                     <h2>Información de Contacto</h2>
                     <div className='infoContainer'>
@@ -55,11 +69,12 @@ export const ContactoPage = () => {
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Ubicación Polivalente de Arte"
+                        ref={mapRef}
                     ></iframe>
                 </section>
             </section>
 
-            <section className='contactoPageForm'>
+            <section className='contactoPageForm' ref={formRef}>
                 <h2 className="contactoPageTitle">Envíanos un Mensaje</h2>
                 <ContactForm />
             </section>

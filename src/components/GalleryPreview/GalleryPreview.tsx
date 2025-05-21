@@ -1,12 +1,19 @@
+import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Gallery } from '../Gallery/Gallery'
 import { imageGallery } from '../../utils/imageGallery'
+import { useGsapFadeInUp } from '../../hooks/useGsapFadeInUp'
 import './_galleryPreview.scss'
 
 export const GalleryPreview = () => {
+    const galleryRef = useRef<HTMLDivElement>(null);
+    const titleRef = useRef<HTMLHeadingElement>(null);
+
+    useGsapFadeInUp(galleryRef, 0.2);
+    useGsapFadeInUp(titleRef, 0.4);
     return (
-        <div className="galleryPreview">
-            <h2 className="galleryTitle">Galería de Trabajos</h2>
+        <div className="galleryPreview" ref={galleryRef}>
+            <h2 className="galleryTitle" ref={titleRef}>Galería de Trabajos</h2>
             <Gallery images={imageGallery.slice(0, 3)} />
             <Link
                 to="/galeria"

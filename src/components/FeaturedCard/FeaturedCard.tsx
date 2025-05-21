@@ -29,7 +29,7 @@ export const FeaturedCard = ({ feature }: FeaturedCardProps) => {
             </picture>
             <h3 className='featuredCardTitle'>{feature.name}</h3>
             <p className='featuredCardDescription'>{feature.description}</p>
-            <Link to={'/especialidades'} className="featuredCardLink">
+            <Link to={'/especialidades'} className="featuredCardLink" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}>
                 <span>Conocer más</span>
             </Link>
         </div>
