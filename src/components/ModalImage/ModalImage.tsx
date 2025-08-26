@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ReactDOM from 'react-dom';
 import './_modalImage.scss';
 
 type ModalImageProps = {
@@ -16,13 +17,14 @@ export const ModalImage = ({ src, alt, onClose }: ModalImageProps) => {
         return () => window.removeEventListener('keydown', handleKey);
     }, [onClose]);
 
-    return (
+    return ReactDOM.createPortal(
         <div className="modalImageOverlay" onClick={onClose}>
             <div className="modalImageContent" onClick={e => e.stopPropagation()}>
-                <img src={src} alt={alt || 'Imagen ampliada'} loading='lazy' />
+                <img src={src} alt={alt || 'Imagen ampliada'} loading="lazy" />
                 <button className="modalImageClose" onClick={onClose}>&times;</button>
                 <p className="modalDescription">{alt}</p>
             </div>
-        </div>
+        </div>,
+        document.body
     );
 };

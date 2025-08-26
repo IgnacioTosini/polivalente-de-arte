@@ -1,34 +1,42 @@
 export const imageGallery = [
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 1'
+        src: '../public/images/MuestraDanza1.jpg',
+        alt: 'Muestra de Danza'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 2'
+        src: '../public/images/MuestraDanza2.jpg',
+        alt: 'Muestra de Danza'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 3'
+        src: '../public/images/MuestraDanza3.jpg',
+        alt: 'Muestra de Danza'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 4'
+        src: '../public/images/MuestraDanza4.jpg',
+        alt: 'Muestra de Danza'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 5'
+        src: '../public/images/MuestraMusica1.jpg',
+        alt: 'Muestra de Música'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 6'
+        src: '../public/images/MuestraMusica2.jpg',
+        alt: 'Muestra de Música'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 7'
+        src: '../public/images/MuestraMusica3.jpg',
+        alt: 'Muestra de Música'
     },
     {
-        src: 'https://placehold.co/400',
-        alt: 'Description for image 8'
+        src: '../public/images/MuestraArtesVisuales1.jpg',
+        alt: 'Muestra de Artes Visuales'
+    },
+    {
+        src: '../public/images/MuestraArtesVisuales2.jpg',
+        alt: 'Muestra de Artes Visuales'
+    },
+    {
+        src: '../public/images/MuestraArtesVisuales3.jpg',
+        alt: 'Muestra de Artes Visuales'
     }
 ];

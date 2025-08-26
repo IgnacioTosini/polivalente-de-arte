@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react';
 import { ModalImage } from '../ModalImage/ModalImage';
-import './_gallery.scss';
 import { useGsapFadeInUp } from '../../hooks/useGsapFadeInUp';
 import { useGsapStaggeredFadeIn } from '../../hooks/useGsapStaggeredFadeIn';
+import './_gallery.scss';
 
 type GalleryProps = {
     images: { src: string; alt: string }[];

@@ -8,13 +8,14 @@ import './_galleryPreview.scss'
 export const GalleryPreview = () => {
     const galleryRef = useRef<HTMLDivElement>(null);
     const titleRef = useRef<HTMLHeadingElement>(null);
+    const imageGalleryRandom = imageGallery.sort(() => 0.5 - Math.random()).slice(0, 3);
 
     useGsapFadeInUp(galleryRef, 0.2);
     useGsapFadeInUp(titleRef, 0.4);
     return (
         <div className="galleryPreview" ref={galleryRef}>
             <h2 className="galleryTitle" ref={titleRef}>Galería de Trabajos</h2>
-            <Gallery images={imageGallery.slice(0, 3)} />
+            <Gallery images={imageGalleryRandom} />
             <Link
                 to="/galeria"
                 className="galleryLink"
